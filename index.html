@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim - Moisés Ernesto Marcelino</title>
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f2f5;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    header {
+      background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+      padding: 20px;
+      color: white;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #e91e63;
+      margin-top: -60px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #e91e63; margin-bottom: 20px; }
+    p { margin: 10px 0; font-size: 1.1em; }
+    strong { color: #333; }
+    .social-buttons { margin: 20px 0; }
+    .social-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    .social-buttons a:hover { transform: scale(1.1); }
+    .whatsapp-button, .cv-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      border-radius: 40px;
+      font-size: 1.1em;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      margin: 10px;
+    }
+    .whatsapp-button { background-color: #25d366; }
+    .cv-button { background-color: #007bff; }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Bem-vindo ao meu mundo colorido!</header>
+  <img class="profile-pic" src="perfil.jpg" alt="Foto de Moisés Ernesto Marcelino">
+  <section>
+    <h2>Sobre Mim</h2>
+    <p><strong>Nome:</strong> Moisés Ernesto Marcelino</p>
+    <p><strong>Idade:</strong> 21 anos</p>
+    <p><strong>Nascimento:</strong> 05 de Julho de 2004</p>
+    <p><strong>Naturalidade:</strong> Mocuba, Zambézia - Moçambique</p>
+    <p><strong>Residência atual:</strong> Mugeba, Distrito de Mocuba</p>
+    <h2>Conecte-se Comigo</h2>
+    <div class="social-buttons">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+    <h2>Contato Direto</h2>
+    <a class="whatsapp-button" href="https://wa.me/258861318511" target="_blank">
+      WhatsApp: +258 86 131 8511
+    </a><br>
+    <a class="cv-button" href="meu-cv.pdf" download>📄 Baixar Meu CV</a>
+  </section>
+  <footer>© 2024 Moisés Ernesto Marcelino - Todos os direitos reservados</footer>
+</body>
+</html>
